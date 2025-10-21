@@ -8,6 +8,26 @@
 </head>
 <body>
     <%- include("./partials/navbar") %>
+    <div id="register-form-container">
+        <div id="register-form-title">Register</div>
+        <form id="register-form" action="" method="post">
+            
+            <label id="fname-label" for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname">
 
+            <label id="lname-label" for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname">
+
+            <label id="username-label" for="username">Username:</label>
+            <input type="text" name="username" id="username">
+
+            <label id="password-label" for="password">Password:</label>
+            <input type="password" name="password" id="password">   
+
+            <label id="cpassword-label" for="cpassword">Confirm Password:</label>
+            <input type="password" name="cpassword" id="cpassword">            
+        </form>
+    </div>
+    <%- include("./partials/footer") %>
 </body>
 </html>

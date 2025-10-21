@@ -4,36 +4,89 @@
     --text-color: #fff;
     --alternate-text-color: #38444d;
     --box-shadow: #d7d7d7;
+    --title-size: 1.2rem;
+    --heading-size: 1rem;
+    --font-size: 0.7rem;
 }
 
 *{
     margin: 0;
     padding: 0;
-}
-
-#navbar{
-    display: flex;
-    flex-direction: row;
-    min-height: 5vh;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    padding: 5px;
-    align-items: center;
-}
-
-#nav-title{
-    width: 60%;
-}
-
-#nav-links-container{
-    display: flex;
-    width: 40%;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: right;
-}
-
-#navbar a{
-    text-decoration: none;
     color: var(--text-color);
 }
+
+/* Footer */
+
+    #footer{
+        position: fixed;
+        font-size: 0.6rem;
+        padding: 5px;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        text-align: center;
+        font-size: var(--font-size);
+    }
+
+    #footer a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+/* Footer End */
+
+/* Nav */
+
+    #navbar{
+        display: flex;
+        flex-direction: row;
+        min-height: 5vh;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 5px;
+        align-items: center;
+        gap: 3px;
+    }
+
+    #nav-title{
+        width: 60%;
+        font-size: var(--title-size);
+    }
+
+    #nav-links-container{
+        display: flex;
+        font-size: var(--heading-size);
+        width: 40%;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: right;
+        padding: 5px;
+    }
+
+    #navbar a{
+        text-decoration: none;
+        color: var(--text-color);
+    }
+
+/* Nav End */
+
+/* Register */
+
+    #register-form-container{
+        width: 80%;
+        margin: auto;
+        margin-top: 10vh;
+        background-color: var(--primary-color);
+        font-size: var(--font-size);
+        border-radius: 5px;
+    }
+
+    #register-form-title{
+        text-align: center;
+        font-size: var(--title-size);
+        padding: 10px;
+    }
+
+/* Register End */
