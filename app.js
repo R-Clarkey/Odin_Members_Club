@@ -13,6 +13,14 @@ const passport = require("passport");
 const LocalStrategy = require('passport-local').Strategy;
 const bcrypt = require("bcryptjs");
 
+
+app.use(session({ secret: "cats", resave: false, saveUninitialized: false }));
+app.use(passport.session());
+app.use(express.urlencoded({ extended: false }));
+
+const signUpFormRoute = require("./routes/sign-up-formRoute")
+app.use("/sign-up", signUpFormRoute)
+
 app.get('/', function (req, res) {
     res.render('index');
 })
