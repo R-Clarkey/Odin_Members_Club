@@ -1,8 +1,28 @@
-<nav id="navbar">
+    <% if (!currentUser) {%>
+    <nav id="navbar">
+        <div id="nav-title"><a href="/">The Crypto Club</a></div>
+        <div id="nav-links-container">
+        <div><a href="/sign-in">Sign In</a></div>
+        <div><a href="/sign-up">Sign Up</a></div>
+        </div>
+    </nav>
+    <% } else { %>
+    <nav id="navbar">
+        <div id="nav-title"><a href="/">The Crypto Club</a></div>
+        <div id="nav-links-container">
+        <div><a href="/post">Post</a></div>
+        <div><a href="/log-out">Log Out</a></div>
+        <div><a href="/sign-up">Sign Up</a></div>
+        </div>
+    </nav>
+    <%}%>
+
+
+<!-- <nav id="navbar">
     <div id="nav-title"><a href="/">The Crypto Club</a></div>
     <div id="nav-links-container">
         <div>Link</div>
-        <div>Link</div>
-        <div><a href="/register">Register</a></div>
+        <div><a href="/sign-in">Sign In</a></div>
+        <div><a href="/sign-up">Sign Up</a></div>
     </div>
-</nav>
+</nav> -->

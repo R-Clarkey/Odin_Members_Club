@@ -1,12 +1,31 @@
+:root{
+    --main-font-colour: #85807a;
+    --primary-background-colour: #1f1f1f;
+    --secondary-background-colour: #2a2a2a;
+    --nav-font-colour: #279638;
+    --nav-font-highlight-colour: #5dd954;
+}
+
+body{
+    margin: 0;
+    background-color: var(--secondary-background-colour);
+    color: var(--main-font-colour);
+    overflow: hidden;
+}
+
 /* Navbar  */
 #navbar{
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 100;
+    background-color: var(--primary-background-colour);
+    padding: 5px;
+    align-items: center;
 }
 
 #nav-title{
     width: 40%;
+    font-size: 2em;
 }
 
 #nav-links-container{
@@ -16,20 +35,28 @@
     gap: 10px;
     justify-content: right;
 }
+
+
+#navbar a{
+    text-decoration: none;
+    color: var(--nav-font-colour);
+}
+
+#navbar a:hover{
+    color: var(--nav-font-highlight-colour);
+}
+
 /* Navbar End */
 
 /* Footer */
 #footer{
     position: fixed;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
     padding: 5px;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--primary-color);
-    color: var(--text-color);
     text-align: center;
-    font-size: var(--font-size);
 }
 
 #footer a{
@@ -37,3 +64,42 @@
     color: var(--text-color);
 }
 /* Footer End */
+
+/* Index Content */
+
+#index-message{
+    margin: auto auto;
+    text-align: center;
+    padding: 2rem;
+}
+
+#index-container{
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+#index-messages-container{
+    display: flex;
+    width: 100vw;
+    margin: auto auto;
+    background-color: blue;
+
+}
+
+#index-groups-container{
+    display: flex;
+    width: 100vw;
+    margin: auto auto;
+    background-color: red;
+}
+
+.index-container-title{
+    text-align: left;
+    padding: 2rem;
+}
+
+/* Index Content End */

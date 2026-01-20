@@ -5,5 +5,6 @@ const checkFunction = check.check;
 const signUpFormController = require("../controllers/sign-up-formController")
 
 router.get("/", signUpFormController.getPage)
+router.post("/", signUpFormController.postForm)
 
 module.exports  = router
